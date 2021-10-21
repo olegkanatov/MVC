@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		1984DF8127216A870027273B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DF8027216A870027273B /* AppDelegate.swift */; };
 		1984DF8327216A870027273B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DF8227216A870027273B /* SceneDelegate.swift */; };
-		1984DF8527216A870027273B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DF8427216A870027273B /* ViewController.swift */; };
-		1984DF8827216A870027273B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1984DF8627216A870027273B /* Main.storyboard */; };
+		1984DF8527216A870027273B /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DF8427216A870027273B /* CommentsViewController.swift */; };
+		1984DF8827216A870027273B /* Comments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1984DF8627216A870027273B /* Comments.storyboard */; };
 		1984DF8A27216A890027273B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1984DF8927216A890027273B /* Assets.xcassets */; };
 		1984DF8D27216A890027273B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1984DF8B27216A890027273B /* LaunchScreen.storyboard */; };
+		1984DF9E2721706A0027273B /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DF9D2721706A0027273B /* CommentCell.swift */; };
+		1984DFA0272171570027273B /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DF9F272171570027273B /* Comment.swift */; };
+		1984DFA3272174110027273B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DFA2272174110027273B /* NetworkService.swift */; };
+		1984DFA6272176AF0027273B /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DFA5272176AF0027273B /* CommentNetworkService.swift */; };
+		1984DFA8272177680027273B /* GetCommentResponce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DFA7272177680027273B /* GetCommentResponce.swift */; };
+		1984DFAB27217A490027273B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1984DFAA27217A490027273B /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1984DF7D27216A870027273B /* MVC-N.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-N.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1984DF8027216A870027273B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1984DF8227216A870027273B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1984DF8427216A870027273B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1984DF8727216A870027273B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1984DF8427216A870027273B /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		1984DF8727216A870027273B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Comments.storyboard; sourceTree = "<group>"; };
 		1984DF8927216A890027273B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1984DF8C27216A890027273B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1984DF8E27216A890027273B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1984DF9D2721706A0027273B /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		1984DF9F272171570027273B /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		1984DFA2272174110027273B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		1984DFA5272176AF0027273B /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		1984DFA7272177680027273B /* GetCommentResponce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponce.swift; sourceTree = "<group>"; };
+		1984DFAA27217A490027273B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,117 @@
 		1984DF7F27216A870027273B /* MVC-N */ = {
 			isa = PBXGroup;
 			children = (
-				1984DF8027216A870027273B /* AppDelegate.swift */,
-				1984DF8227216A870027273B /* SceneDelegate.swift */,
-				1984DF8427216A870027273B /* ViewController.swift */,
-				1984DF8627216A870027273B /* Main.storyboard */,
-				1984DF8927216A890027273B /* Assets.xcassets */,
-				1984DF8B27216A890027273B /* LaunchScreen.storyboard */,
-				1984DF8E27216A890027273B /* Info.plist */,
+				1984DF9727216ADD0027273B /* Application */,
+				1984DF9827216B1A0027273B /* Comments */,
+				1984DF9C27216B6A0027273B /* Supporting files */,
 			);
 			path = "MVC-N";
+			sourceTree = "<group>";
+		};
+		1984DF9427216AB10027273B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1984DFAA27217A490027273B /* NetworkError.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1984DF9527216ABE0027273B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1984DF8B27216A890027273B /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1984DF9627216AC30027273B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1984DF8027216A870027273B /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1984DF9727216ADD0027273B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1984DF9427216AB10027273B /* Model */,
+				1984DF9527216ABE0027273B /* View */,
+				1984DF9627216AC30027273B /* Controller */,
+				1984DFA1272173FF0027273B /* NetworkService */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		1984DF9827216B1A0027273B /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				1984DF9B27216B340027273B /* Model */,
+				1984DF9A27216B300027273B /* View */,
+				1984DF9927216B2A0027273B /* Controller */,
+				1984DFA42721767F0027273B /* CommentNetworkService */,
+			);
+			name = Comments;
+			sourceTree = "<group>";
+		};
+		1984DF9927216B2A0027273B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1984DF8427216A870027273B /* CommentsViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1984DF9A27216B300027273B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1984DF8627216A870027273B /* Comments.storyboard */,
+				1984DF9D2721706A0027273B /* CommentCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1984DF9B27216B340027273B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1984DF9F272171570027273B /* Comment.swift */,
+				1984DFA9272179D20027273B /* Responses */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1984DF9C27216B6A0027273B /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				1984DF8227216A870027273B /* SceneDelegate.swift */,
+				1984DF8927216A890027273B /* Assets.xcassets */,
+				1984DF8E27216A890027273B /* Info.plist */,
+			);
+			name = "Supporting files";
+			sourceTree = "<group>";
+		};
+		1984DFA1272173FF0027273B /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1984DFA2272174110027273B /* NetworkService.swift */,
+			);
+			name = NetworkService;
+			sourceTree = "<group>";
+		};
+		1984DFA42721767F0027273B /* CommentNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				1984DFA5272176AF0027273B /* CommentNetworkService.swift */,
+			);
+			name = CommentNetworkService;
+			sourceTree = "<group>";
+		};
+		1984DFA9272179D20027273B /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				1984DFA7272177680027273B /* GetCommentResponce.swift */,
+			);
+			name = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +240,7 @@
 			files = (
 				1984DF8D27216A890027273B /* LaunchScreen.storyboard in Resources */,
 				1984DF8A27216A890027273B /* Assets.xcassets in Resources */,
-				1984DF8827216A870027273B /* Main.storyboard in Resources */,
+				1984DF8827216A870027273B /* Comments.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,21 +251,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1984DF8527216A870027273B /* ViewController.swift in Sources */,
+				1984DFA0272171570027273B /* Comment.swift in Sources */,
+				1984DF8527216A870027273B /* CommentsViewController.swift in Sources */,
 				1984DF8127216A870027273B /* AppDelegate.swift in Sources */,
 				1984DF8327216A870027273B /* SceneDelegate.swift in Sources */,
+				1984DFA3272174110027273B /* NetworkService.swift in Sources */,
+				1984DFA8272177680027273B /* GetCommentResponce.swift in Sources */,
+				1984DFAB27217A490027273B /* NetworkError.swift in Sources */,
+				1984DF9E2721706A0027273B /* CommentCell.swift in Sources */,
+				1984DFA6272176AF0027273B /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1984DF8627216A870027273B /* Main.storyboard */ = {
+		1984DF8627216A870027273B /* Comments.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1984DF8727216A870027273B /* Base */,
 			);
-			name = Main.storyboard;
+			name = Comments.storyboard;
 			sourceTree = "<group>";
 		};
 		1984DF8B27216A890027273B /* LaunchScreen.storyboard */ = {
